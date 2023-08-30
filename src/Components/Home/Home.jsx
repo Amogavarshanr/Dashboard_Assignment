@@ -34,11 +34,11 @@ const Home = ({ logout}) => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        // if User is signed in
+        //  if User is signed in
         setUser(user);
         saveUser(user);
       } else {
-        //if  User is signed out
+        // if  User is signed out
         setUser(null);
       }
     });
